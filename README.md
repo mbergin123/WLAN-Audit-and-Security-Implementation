@@ -47,7 +47,7 @@ vWorkstation (Windows Server 2016)  →  172.30.0.2
 Kali Linux (Auditor System)        →  172.30.0.33
 ```
 
-![Topology](audit_top.png)
+![Topology](images/audit_top.png)
 
 ---
 
@@ -57,7 +57,7 @@ Kali Linux (Auditor System)        →  172.30.0.33
 Command:  
 `man airmon-ng`  
 Used to enable and manage monitor mode on wireless interfaces.  
-![Airmon-ng](airmon_command.png)
+![Airmon-ng](images/airmon_command.png)
 
 ---
 
@@ -65,7 +65,7 @@ Used to enable and manage monitor mode on wireless interfaces.
 Command:  
 `./airodump-ng --help`  
 Used for capturing 802.11 frames, identifying APs, clients, channels, and encryption types.  
-![Airodump-ng](airodump.png)
+![Airodump-ng](images/airodump.png)
 
 ---
 
@@ -73,7 +73,7 @@ Used for capturing 802.11 frames, identifying APs, clients, channels, and encryp
 Command:  
 `./aireplay-ng --help`  
 Used to inject frames, generate wireless traffic, and perform deauthentication to capture WPA handshakes.  
-![Aireplay-ng](aireplay.png)
+![Aireplay-ng](images/aireplay.png)
 
 ---
 
@@ -81,7 +81,7 @@ Used to inject frames, generate wireless traffic, and perform deauthentication t
 Command:  
 `aircrack-ng --help`  
 Used to crack WEP and WPA/WPA2 pre-shared keys from captured packets.  
-![Aircrack-ng](aircrack.png)
+![Aircrack-ng](images/aircrack.png)
 
 ---
 
@@ -95,14 +95,14 @@ aircrack-ng -w /WLAN/wordlist/wordlist.txt /WLAN/wordlist/WLAN/Capture-01.cap
 ```
 
 Aircrack-ng analyzes the capture file, identifies access points, and verifies handshake presence.  
-![Aircrack WPA](aircrack_WLAN.png)
+![Aircrack WPA](images/aircrack_WLAN.png)
 
 ---
 
 ## Step 2: Selecting Target Network and Cracking the Key
 Selected target network index **18**, allowing Aircrack-ng to run a dictionary attack against the captured handshake.  
 The WPA key was successfully recovered.  
-![Network Target](network_target.png)
+![Network Target](images/network_target.png)
 
 ---
 
